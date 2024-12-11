@@ -15,7 +15,6 @@ namespace mvcWithDb.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Exemple : Ajouter des données par défaut
             modelBuilder.Entity<Restaurant>().HasData(
                 new Restaurant { Id = 1, Name = "La petite Pizza", Location = "Paris 5ème" },
                 new Restaurant { Id = 2, Name = "La petite Salade", Location = "Paris 6ème" }

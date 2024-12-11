@@ -13,6 +13,24 @@
 <body>
     <div class="container">
         <h1 class="my-4">Liste des Repas du restaurant</h1>
+        
+        <div class="card mb-4">
+            <div class="card-header">Ajouter un Restaurant</div>
+            <div class="card-body">
+                <form action="@Url.Action("Add", "Restaurant")" method="post">
+                    <div class="form-group">
+                        <label for="Name">Nom du Restaurant</label>
+                        <input type="text" name="Name" id="Name" class="form-control" placeholder="Nom du Restaurant" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Location">Localisation</label>
+                        <input type="text" name="Location" id="Location" class="form-control" placeholder="Localisation" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                </form>
+            </div>
+        </div>
+
         <ul class="list-group">
             @if (Model != null && Model.Any())
             {
