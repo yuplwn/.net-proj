@@ -15,8 +15,20 @@ namespace mvcWithDb.Controllers
 
         public IActionResult Index()
         {
-            var repas = _context.Repas.ToList();
-            return View(repas);
+            var restaurants = _context.Repas.ToList();
+            return View(restaurants);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var restaurant = _context.Repas.Find(id);
+            if (restaurant != null)
+            {
+                _context.Repas.Remove(restaurant);
+                _context.SaveChanges();
+            }
+            return RedirectToAction(nameof(Index));
         }
     }
 }

@@ -102,3 +102,4 @@ C:\Users\lawen\Desktop\mvcWithDb\obj\Debug\net8.0\refint\mvcWithDb.dll
 C:\Users\lawen\Desktop\mvcWithDb\obj\Debug\net8.0\mvcWithDb.pdb
 C:\Users\lawen\Desktop\mvcWithDb\obj\Debug\net8.0\mvcWithDb.genruntimeconfig.cache
 C:\Users\lawen\Desktop\mvcWithDb\obj\Debug\net8.0\ref\mvcWithDb.dll
+C:\Users\lawen\Desktop\mvcWithDb\obj\Debug\net8.0\mvcWithDb.sourcelink.json
